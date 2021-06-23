@@ -52,15 +52,15 @@
     由于CHID还在继续实验中，暂时未将CHID的分数纳入到最终的分数(Score）中。
    <a href='https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/NEZHA-Gen-TensorFlow'>使用的GPT模型: NEZHA-Gen</a>
 
-## 测试流程
-    直接在测试集(test.json)上做预测; 生成的预测文件为：<task>_predict.json。如bustm_predict.json
-  
 ## Datasets 数据集
     需要预测的测试文件地址： ./datasets/
 
 ## Baseline 基线模型
     说明：./baselines/readme.md
 
+## 测试流程
+    使用验证集(dev.json)做验证，在测试集(test.json)上做预测，并生成的预测文件。格式为：<task>_predict.json，如：bustm_predict.json
+  
 ## Submit Examples 提交样例
     ./resources/zeroclue_submit_examples
    
